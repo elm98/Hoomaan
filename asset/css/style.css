@@ -1,0 +1,298 @@
+ @font-face {
+     font-family: "IRANSans";
+     src: url("font/IRANSansWeb(FaNum).woff") format("woff");
+     src: url("font/IRANSansWeb(FaNum).woff2");
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ body {
+     font-family: "IRANSans";
+     font-size: 15px;
+     color: #222;
+     background: #ffffff;
+     line-height: 2;
+
+ }
+ 
+.category-item {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.category-item img {
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.category-item .category-content {
+    position: absolute;
+    text-align: center;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+.category-item .cat__title {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-weight: 700;
+}
+
+.category-item .cat__title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.category-item .theme-btn {
+    background-color: #fff;
+    color: #233d63;
+    line-height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 13px;
+    opacity: 0;
+    visibility: hidden;
+    border-color: #fff;
+}
+
+
+.category-item .theme-btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.nav-box-shadow {
+    box-shadow: rgb(0 0 0 / 12%) 0px 0.6rem 2.5rem 0px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #EBBA28 !important;
+}
+
+.category-item:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #061f53a1;
+    opacity: .60;
+    content: "";
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.category-item:hover .category-content {
+    padding-top: 0;
+}
+
+
+
+.category-item:hover .theme-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.category-item:hover img {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    -moz-transform: scale(1.1) rotate(3deg);
+    -ms-transform: scale(1.1) rotate(3deg);
+    -o-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+}
+
+.rtl{
+    direction: rtl;
+}
+
+
+.News-letters {
+    position: relative;
+    background: url("../images/mountain.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fs-28{
+    font-size: 28px;
+}
+
+.News-letters:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: #061f53a1;
+    opacity: .6;
+}
+
+.News-letters:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: #061f53a1;
+    opacity: .60;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+.swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 250px;
+
+    }
+        .fs-10 {
+            font-size: 10px;
+        }
+}
+
+@media screen and (min-width: 992px) {
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+ .active .nav-link {
+     border-bottom: 3px solid #fdc00a;
+ }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 500px;
+
+    }
+    .card-text{
+        position: absolute;
+            right: 130px;
+            margin-top: 120px;
+            background: white;
+            border: 1px solid #dbdbdb;
+            padding-top: 20px;
+    }
+    .img-left{
+            left: 170px;
+    }
+    .card-text-two{
+    position: absolute;
+        left: 100px;
+        margin-top: 120px;
+        background: white;
+        border: 1px solid #dbdbdb;
+        padding-top: 20px;
+            z-index: 200;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .column-td-half {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+.list-none{
+    list-style: none;
+}
+.border-bottom-custom{
+        border-bottom: 1px solid #969292;
+}
+.Newsemail {
+    position: relative;
+    background: url("../images/mountain.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+@media (max-width: 575.98px) {
+ .show{
+    display: block;
+ }
+}
+
+.bg-opacity{
+    background-color: #ffffff46;
+}
+
+@media (min-width: 767.98px) {
+    .show {
+        display: none;
+    }
+}
